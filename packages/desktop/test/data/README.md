@@ -1,4 +1,4 @@
-Please migrate all the environments.json sample files when adding a new migration. 
+Please migrate all the environments.json sample files when adding a new migration.
 You can use the script in `/scripts/migrate-test.js`.
 Please note that some folders/sample files marked with a `.do-not-update-files` must never be migrated.
 

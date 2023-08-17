@@ -4,7 +4,7 @@ servers:
 info:
   contact:
     x-twitter: Shutterstock
-  description: 'The Shutterstock API provides access to Shutterstock''s library of media, as well as information about customers'' accounts and the contributors that provide the media.'
+  description: "The Shutterstock API provides access to Shutterstock's library of media, as well as information about customers' accounts and the contributors that provide the media."
   title: Shutterstock API Explorer
   version: 1.0.16
   x-apisguru-categories:
@@ -1705,7 +1705,7 @@ paths:
         - contributors
   '/v2/contributors/{contributor_id}/collections/{id}':
     get:
-      description: 'This endpoint gets more detailed information about a contributor''s collection, including its cover image, timestamps for its creation, and most recent update. To get the items in collections, use GET /v2/contributors/{contributor_id}/collections/{id}/items.'
+      description: "This endpoint gets more detailed information about a contributor's collection, including its cover image, timestamps for its creation, and most recent update. To get the items in collections, use GET /v2/contributors/{contributor_id}/collections/{id}/items."
       operationId: getContributorCollections
       parameters:
         - description: Contributor ID
@@ -2316,7 +2316,7 @@ paths:
                           width: 113
                         created_time: '2018-10-19T20:27:26+00:00'
                         id: 2018%2F10%2F19%2F'Butterfly'%20photocall%2C%20Rome%20Film%20Festival
-                        name: '''Butterfly'' photocall, Rome Film Festival'
+                        name: "'Butterfly' photocall, Rome Film Festival"
                         total_item_count: 24
                     page: 1
                     per_page: 1
@@ -2369,7 +2369,7 @@ paths:
                       url: 'https://editorial01.shutterstock.com/thumb/9938511p/7d1f17d9/Shutterstock_9938511p.jpg'
                       width: 114
                     id: 2018%2F10%2F19%2F'The%20House%20with%20a%20Clock%20in%20Its%20Walls'%20premiere%2C%20Rome%20Film%20Festival
-                    name: '''The House with a Clock in Its Walls'' premiere, Rome Film Festival'
+                    name: "'The House with a Clock in Its Walls' premiere, Rome Film Festival"
                     total_item_count: 100
               schema:
                 $ref: '#/components/schemas/EditorialLivefeed'
@@ -2457,7 +2457,7 @@ paths:
                         description: Christian Marazziti and Ariadna Romero
                         id: 9938573m
                         keywords: []
-                        title: '''The House with a Clock in Its Walls'' premiere, Rome Film Festival, Italy - 19 Oct 2018'
+                        title: "'The House with a Clock in Its Walls' premiere, Rome Film Festival, Italy - 19 Oct 2018"
               schema:
                 $ref: '#/components/schemas/EditorialContentDataList'
           description: OK
@@ -4121,7 +4121,7 @@ paths:
               examples:
                 response:
                   value:
-                    url: 'https://download.qa.shutterstock.com/gatekeeper/LzEyMy9odWdlLmpwZyIsIm0iOjEsvdjNsbFNWbVNEQ2FhcHV1VlhhSU9VeUpVIl0/shutterstock_60447496.jpg'''
+                    url: "https://download.qa.shutterstock.com/gatekeeper/LzEyMy9odWdlLmpwZyIsIm0iOjEsvdjNsbFNWbVNEQ2FhcHV1VlhhSU9VeUpVIl0/shutterstock_60447496.jpg'"
               schema:
                 $ref: '#/components/schemas/Url'
           description: OK
@@ -5091,7 +5091,7 @@ paths:
             print_r($decodedResponse);
   /v2/oauth/authorize:
     get:
-      description: 'This endpoint returns a redirect URI (in the ''Location'' header) that the customer uses to authorize your application and, together with POST /v2/oauth/access_token, generate an access token that represents that authorization.'
+      description: "This endpoint returns a redirect URI (in the 'Location' header) that the customer uses to authorize your application and, together with POST /v2/oauth/access_token, generate an access token that represents that authorization."
       operationId: authorize
       parameters:
         - description: Client ID (Consumer Key) of your application
@@ -7959,7 +7959,7 @@ components:
           description: Contributor ID
           type: string
         location:
-          description: '2-letter ISO 3166-1 alpha-2 country code representing the contributors'' locale, such as DE or US'
+          description: "2-letter ISO 3166-1 alpha-2 country code representing the contributors' locale, such as DE or US"
           type: string
         portfolio_url:
           description: Web URL for the contributors' profile
@@ -7972,7 +7972,7 @@ components:
             type: string
           type: array
         subjects:
-          description: 'Generic list of subjects for contributors'' work (food_and_drink, holiday, people, etc)'
+          description: "Generic list of subjects for contributors' work (food_and_drink, holiday, people, etc)"
           items:
             type: string
           type: array
@@ -8043,7 +8043,7 @@ components:
         - value
       type: object
     DownloadHistory:
-      description: 'Information about a downloaded media item. Applicable for all media types, only one of ''audio'', ''image'' or ''video'' will be in a single DownloadHistory object'
+      description: "Information about a downloaded media item. Applicable for all media types, only one of 'audio', 'image' or 'video' will be in a single DownloadHistory object"
       properties:
         audio:
           $ref: '#/components/schemas/DownloadHistoryMediaDetails'
@@ -9404,7 +9404,7 @@ components:
           description: 'True if the user has access to sensitive use only, false otherwise'
           type: boolean
         organization_id:
-          description: 'Unique internal identifier for the user''s organization, specific to Premier users'
+          description: "Unique internal identifier for the user's organization, specific to Premier users"
           type: string
         premier_permissions:
           description: List of permissions allowed through the Premier client
@@ -9603,7 +9603,7 @@ components:
             user.address: Grants read-only access to a user's physical address.
             user.edit: Grants read and write access to all user account information.
             user.email: Grants read-only access to a user's email address.
-            user.view: 'Grants read-only access to a user''s basic account information (includes username, id, first and last name). If email is the same as username, it also implies user.email'
+            user.view: "Grants read-only access to a user's basic account information (includes username, id, first and last name). If email is the same as username, it also implies user.email"
           tokenUrl: 'https://contributor-accounts.shutterstock.com/oauth/access_token'
       type: oauth2
       x-shutterstock-realm: contributor
@@ -9617,7 +9617,7 @@ components:
             licenses.create: Grant the ability to download and license media on behalf of the user.
             licenses.view: Grant read-only access to a user's licenses.
             purchases.view: Grant read-only access to a user's purchase history.
-            user.view: 'Grants read-only access to a user''s basic account information (includes username, id, first and last name). If email is the same as username, it also implies user.email'
+            user.view: "Grants read-only access to a user's basic account information (includes username, id, first and last name). If email is the same as username, it also implies user.email"
           tokenUrl: 'https://api.shutterstock.com/v2/oauth/access_token'
       type: oauth2
       x-shutterstock-realm: customer

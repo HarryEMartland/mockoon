@@ -10723,7 +10723,7 @@ paths:
           name: archive_format
           required: true
           type: string
-        - description: 'Valid Git reference, defaults to ''master''.'
+        - description: "Valid Git reference, defaults to 'master'."
           in: path
           name: path
           required: true
@@ -13376,7 +13376,7 @@ paths:
               type: integer
   '/users/{username}/events':
     get:
-      description: 'If you are authenticated as the given user, you will see your private events. Otherwise, you''ll only see public events.'
+      description: "If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events."
       parameters:
         - description: Name of user.
           in: path

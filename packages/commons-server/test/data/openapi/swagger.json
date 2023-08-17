@@ -9,9 +9,7 @@
       "get": {
         "operationId": "listActivities",
         "summary": "List activities (with one example)",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Default response",
@@ -23,7 +21,5 @@
       }
     }
   },
-  "consumes": [
-    "application/json"
-  ]
+  "consumes": ["application/json"]
 }
